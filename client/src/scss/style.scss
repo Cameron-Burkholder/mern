@@ -1,0 +1,30 @@
+/* STYLE */
+
+// THEME
+@import "./theme.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: "";
+}
+
+// SET STYLES FOR WRAPPER
+#wrapper {
+  width: 100VW;
+  height: 100VH;
+}
+
+// COMPONENTS
+@import "./components/Navigation.scss";
+@import "./components/Header.scss";
+@import "./components/Footer.scss";
+@import "./components/Loading.scss";
+@import "./components/Error.scss";
+
+// PAGES
+@import "./components/Home.scss";

@@ -1,0 +1,20 @@
+/* STYLE */
+/* SET THEME VARIABLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: ""; }
+
+#wrapper {
+  width: 100VW;
+  height: 100VH; }
+
+/* NAVIGATION */
+/* HEADER */
+/* FOOTER */
+/* LOADER */
+/* ERROR */
+/* HOME */
