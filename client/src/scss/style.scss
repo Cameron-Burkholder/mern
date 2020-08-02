@@ -19,12 +19,14 @@ h1, h2, h3, h4, h5, h6, button {
   height: 100VH;
 }
 
-// COMPONENTS
-@import "./components/Navigation.scss";
-@import "./components/Header.scss";
-@import "./components/Footer.scss";
-@import "./components/Loading.scss";
-@import "./components/Error.scss";
+// PRESENTATIONAL COMPONENTS
+@import "./components/presentational/_Navigation.scss";
+@import "./components/presentational/_Header.scss";
+@import "./components/presentational/_Footer.scss";
+@import "./components/presentational/_Loading.scss";
+@import "./components/presentational/_Error.scss";
+
+// FUNCTIONAL COMPONENTS
 
 // PAGES
-@import "./components/Home.scss";
+@import "./components/pages/_Home.scss";

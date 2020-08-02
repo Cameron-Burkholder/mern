@@ -4,6 +4,7 @@ const mongoose = require("mongoose");         // For use in database connections
 const bodyParser = require("body-parser");    // For use in parsing incoming requests
 const passport = require("passport");         // For use in authentication
 const path = require("path");                 // For use in directory management
+const email = require("./config/email");      // For use in sending emails
 
 // IMPORT ROUTES
 const users = require("./routes/users");
@@ -37,6 +38,10 @@ require("./config/passport")(passport);
 
 // IMPLEMENT ROUTES
 app.use("/api/users", users);
+app.get("/*", function(request, response) {
+  log("GET REQUEST AT /*");
+  response.sendFile(path.join(__dirname, "client", "public", "index.html"));
+});
 
 // DEFINE PORT AND DEPLOY SERVER
 const port = process.env.PORT || 5000;

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Header from "./Header.js";
+import Header from "../presentational/Header.js";
 
 // USE: home page, description of project
 class Home extends React.Component {
